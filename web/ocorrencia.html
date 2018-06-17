@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RH - Virtual - Ocorrências</title>
+        <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+        <script type='text/javascript' src='js/jquery.mask.min.js'></script>
+        <script type='text/javascript' src='js/ocorrencia.js'></script>
+        <link rel="stylesheet" type="text/css" href="css/ocorrencia.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+    </head>
+    <body>
+    <!-- Parte referente a barra de menu do código -->
+    <nav id="menu">
+        <ul>
+            <li><a href="funcionario.html">Funcionários</a></li>
+            <li><a href="ocorrencia.html">Ocorrência</a></li>
+            <li><a href="feriado.html">Feriados</a></li>
+        </ul>
+    </nav>
+    <!-- //Parte dos campos de cadastro do funcionário -->
+    <br>
+    <div id="cadOcorrência">Cadastro de Ocorrência</div>
+    <br>
+    <form id="formFuncionario">
+        <br>
+        <label>Nome do Funcionário: </label>
+        <input type="text" name="nome" placeholder="Nome do Funcionário" required><br>
+        <label>Gravidade: </label>
+        <select required>
+            <option value="">Selecione</option>
+            <option value="leve">Leve</option>
+            <option value="normal">Normal</option>
+            <option value="grave">Grave</option>
+            <option value="gravissima">Gravíssima</option>
+        </select><br>
+        <label>Data da Ocorrência: </label>
+        <input type="text" id="dataOcorrencia" required placeholder="__/__/____"><br>
+        <label>Advertência? : </label>
+        <input type="radio" name="advertencia" value="sim" required> Sim &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="advertencia" value="nao" required> Não<br><br>
+        <label>Suspensão? :&nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" name="suspensao" value="sim" required> Sim &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="suspensao" value="nao" required> Não<br><br>
+        <label>Descrição da Ocorrência: </label><br>
+        <textarea name="" id="" cols="30" rows="10" required placeholder="Digite a ocorrência com o funcionário: "></textarea>
+        <input type="submit" name="cadastraOcorrencia" value="Cadastrar Ocorrência">
+    </form>
+    <hr>
+    </body>
+</html>

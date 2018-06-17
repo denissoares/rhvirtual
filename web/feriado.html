@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RH - Virtual - Feriados</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type='text/javascript' src='js/feriado.js'></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/feriado.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="menu">
+            <ul>
+                <li><a href="funcionario.html">Funcionários</a></li>
+                <li><a href="ocorrencia.html">Ocorrências</a></li>
+                <li><a href="feriado.html">Feriados</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="fontFeriado">FERIADOS NACIONAIS: O dia que todo funcionário gosta!</div>
+        <br>
+        <table border="2" width="100%">  
+            <tr>
+                <th>Data</th>
+                <th>Dia da Semana</th>
+                <th>Descrição</th>
+            </tr>
+            <tr id="feriado1">
+                <td>01/01/2018</td>
+                <td>Segunda-Feira</td>
+                <td>Confraternização Universal</td>
+            </tr>
+            <tr id="feriado2">
+                <td>21/04/2018</td>
+                <td>Sábado</td>
+                <td>Tiradentes</td>
+            </tr>
+            <tr id="feriado3">
+                <td>01/05/2018</td>
+                <td>Terça-Feira</td>
+                <td>Dia do Trabalho</td>
+            </tr>
+            <tr id="feriado4">
+                <td>07/09/2018</td>
+                <td>Sexta-Feira</td>
+                <td>Independência do Brasil</td>
+            </tr>
+            <tr id="feriado5">
+                <td>12/10/2018</td>
+                <td>Sexta-Feira</td>
+                <td>Nossa Senhora Aparecida</td>
+            </tr>
+            <tr id="feriado6">
+                <td>02/11/2018</td>
+                <td>Sexta-Feira</td>
+                <td>Finados</td>
+            </tr>
+            <tr id="feriado7">
+                <td>15/11/2018</td>
+                <td>Quinta-Feira</td>
+                <td>Proclamação da República</td>
+            </tr>
+            <tr id="feriado8">
+                <td>25/12/2018</td>
+                <td>Terça-Feira</td>
+                <td>Natal</td>
+            </tr>
+        </table>
+        <br>
+        <div>Remover Feriado da Lista - Com JavaScript</div>
+        <br>
+        <select id="listFeriado" class="imobSelect" onchange="removerFeriado()">
+            <option>Selecione</option>
+            <option value="feriado1">Confraternização Universal</option>
+            <option value="feriado2">Tiradentes</option>
+            <option value="feriado3">Dia do Trabalho</option>
+            <option value="feriado4">Independência do Brasil</option>
+            <option value="feriado5">Nossa Senhora Aparecida</option>
+            <option value="feriado6">Finados</option>
+            <option value="feriado7">Proclamação da República</option>
+            <option value="feriado8">Natal</option>
+        </select>
+        <div class="fontFeriado"> FERIADOS MUNICIPAIS:</div>
+        <br>
+        <div>Criar os feriados municipais: </div>
+        <button id="gerarFeriado">Exibir Feriados Municipais</button>
+        <button id="ocultarFeriado">Ocultar Feriados Municipais</button>
+        <p id="gerado"></p>
+    </body>
+</html>
